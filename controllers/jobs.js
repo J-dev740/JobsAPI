@@ -8,15 +8,15 @@ const getJob=async (req,res)=>{
     
 }
 const createJob=async (req,res)=>{
-    res.send('getJob')
+    res.send('createJob')
     
 }
 const updateJob=async (req,res)=>{
-    res.send('getJob')
+    res.send('updateJob')
     
 }
 const deleteJob=async (req,res)=>{
-    res.send('getJob')
+    res.send('deleteJob')
     
 }
 
