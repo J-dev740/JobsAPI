@@ -9,7 +9,7 @@ const errorHandlerMiddleware = (err, req, res, next) => {
   // if (err instanceof CustomAPIError) {
   //   return res.status(err.statusCode).json({ msg: err.message })
   // }
-
+//updated with user friendly msg from the generic error message more readable
 if(err.name=='ValidationError'){
   customError.msg=Object.values(err.errors).map((item)=>item.message).join(',')
   customError.statusCode=400
